@@ -1,0 +1,108 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #171725;
+  color: #AAB8C2;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Container principal */
+.container {
+  background-color: #5C3D82;
+  max-width: 800px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Títulos */
+h1, h2 {
+  color: #EFF2F7;
+  border-bottom: 2px solid #2C3E50;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Agrupamento de campos */
+.form-group {
+  margin-top: 20px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Inputs e textarea */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #2C3E50;
+  border-radius: 5px;
+  background-color: #2C3E50;
+  color: #EFF2F7;
+}
+
+/* Placeholder mais visível */
+::placeholder {
+  color: #AAB8C2;
+}
+
+/* Foco acessível */
+input:focus,
+textarea:focus {
+  border-color: #3498DB;
+  outline: 2px solid #3498DB;
+}
+
+/* Texto de ajuda */
+small {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Resultado */
+#output {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #2C3E50;
+  border-radius: 5px;
+  word-wrap: break-word;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  h1, h2 {
+    font-size: 20px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
+    }
