@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tradutor de Cifra de César</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+    
+    <h1>Tradutor de Cifra de César</h1>
+
+    <!-- Campo de deslocamento -->
+    <div class="form-group">
+      <label for="shift">Deslocamento (1 a 25):</label>
+      <input 
+        type="number" 
+        id="shift" 
+        name="shift"
+        value="1" 
+        min="1" 
+        max="25"
+        aria-describedby="shiftHelp"
+      >
+      <small id="shiftHelp">
+        Escolha o número de posições para deslocar as letras.
+      </small>
+    </div>
+
+    <!-- Campo de texto -->
+    <div class="form-group">
+      <label for="plaintext">Digite seu texto:</label>
+      <textarea 
+        id="plaintext" 
+        name="plaintext"
+        rows="4" 
+        placeholder="Digite seu texto aqui..."
+        aria-label="Campo para inserir o texto a ser traduzido"
+      ></textarea>
+    </div>
+
+    <!-- Resultado -->
+    <section aria-live="polite">
+      <h2>Texto Traduzido:</h2>
+      <p id="output" tabindex="0"></p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+      </html>
